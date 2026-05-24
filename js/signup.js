@@ -21,7 +21,7 @@ async function signup() {
   try {
 
     const response = await fetch(
-      "http://localhost:3000/users",
+      "https://sintapp-backend.onrender.com/users",
       {
 
         method:"POST",

@@ -22,7 +22,7 @@ async function crearPartido() {
   console.log("📤 ENVIANDO:", partido);
 
   try {
-    const res = await fetch("http://localhost:3000/matches", {
+    const res = await fetch("https://sintapp-backend.onrender.com/matches", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

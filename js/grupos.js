@@ -11,7 +11,7 @@ function normalizarNombre(nombre){
 // 🚀 CARGAR GRUPOS
 async function cargarGrupos(){
   try {
-    const res = await fetch("http://localhost:3000/groups");
+    const res = await fetch("https://sintapp-backend.onrender.com/groups");
     const grupos = await res.json();
 
     groupsContainer.innerHTML = "";

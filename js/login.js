@@ -7,7 +7,7 @@ async function login() {
   try {
 
     const response = await fetch(
-      "http://localhost:3000/users/login",
+      "https://sintapp-backend.onrender.com/users/login",
       {
 
         method:"POST",

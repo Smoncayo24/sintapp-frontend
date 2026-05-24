@@ -17,7 +17,7 @@ async function crearGrupo() {
   console.log("📤 ENVIANDO:", grupo);
 
   try {
-    const res = await fetch("http://localhost:3000/groups", {
+    const res = await fetch("https://sintapp-backend.onrender.com/groups", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

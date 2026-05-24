@@ -8,7 +8,7 @@ async function showTodayMatches() {
   todayBtn.classList.add("active-tab");
   weekBtn.classList.remove("active-tab");
 
-  const response = await fetch("http://localhost:3000/matches/hoy");
+  const response = await fetch("https://sintapp-backend.onrender.com/matches/hoy");
   const data = await response.json();
 
   renderMatches(data);
@@ -20,7 +20,7 @@ async function showWeekMatches() {
   weekBtn.classList.add("active-tab");
   todayBtn.classList.remove("active-tab");
 
-  const response = await fetch("http://localhost:3000/matches/semana");
+  const response = await fetch("https://sintapp-backend.onrender.com/matches/semana");
   const data = await response.json();
 
   renderMatches(data);
